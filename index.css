@@ -1,0 +1,574 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+
+}
+
+/* nav bar */
+.nav{
+  height: 10%;
+  background-color: #ff7171;
+  display: flex;
+  justify-content: space-evenly
+}
+.nav-container{
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container-left{
+  height: 100%;
+  width: 94%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+ 
+}
+.container-left a{
+  text-decoration: none;
+  font-size:1.2rem;
+  font-weight: bold;
+  color:black;
+  letter-spacing: 4px;
+}
+
+.container-right{
+  height: 100%;
+  width: 5%;
+}
+.container-right img{
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  padding: 15px 5px;
+
+}
+
+/* min content */
+
+.main-content{
+  height:90vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(to right, #ffe6b3, #ffccf9);
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+.left-main-container , .right-main-container {
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  
+}
+
+
+/* food image container */
+.right-main-container img{
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  transform: scaleX(1.7) scaleY(1.1); 
+  object-fit: cover;
+}
+.food-information-container{
+  height: 65%;
+  width: 80%;
+}
+.food-name{
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bolder;
+  font-size: larger;
+  letter-spacing: 0.563rem;
+}
+
+.explore-button{
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+.explore-button button{
+  padding: 10px 70px;
+  background-color: #ff7171;
+  color:white;
+  border: none;
+  font-size: 10px;
+}
+
+/* main container 2 */
+
+.main-container2{
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+height: 98vh;
+width: 100vw;
+ background: linear-gradient(to right, #ffe6b3, #ffccf9);
+ margin-top: 10px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.image-container{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 10px;
+
+}
+.data-container{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 10px;
+}
+.images{
+  height: 60%;
+  width: 75%;
+  display: flex;
+  position: relative;
+  top: 10px;
+}
+.left-image{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ 
+}
+.image1, .image2{
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+  padding: 10px;
+}
+#top-image, #bottom-image{
+  height: 100%;
+  width: 100%;
+  transform: scaleY(1.9);
+}
+.right-image{
+  height: 100%;
+  width: 50%;
+  padding: 0px 10px;
+}
+.right-image img{
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+.data-box{
+  height: 35%;
+  width: 60%;
+  padding: 20px;
+   background-color: #ff7171;
+}
+.data-box-header{
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+.data-box-header p{
+   font-size:0.7rem;
+}
+
+.data-box-container{
+   height: 60%;
+  display: flex;
+ align-items: center;
+ letter-spacing: 4px;
+ font-weight:bolder;
+ font-size:large;
+  
+}
+.data-box-footer{
+  height: 20%;
+  display: flex;
+  align-items: end;
+  
+}
+.data-box-footer button{
+  height:50%;
+  width: 10%;
+  padding-right: 30px;
+  font-size: small;
+  border: none;
+  background-color:#ff7171;
+}
+.arrow-image{
+  height: 50%;
+  width: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow-image img{
+  height: 100%;
+  width: 100%;
+}
+
+
+/* nav for mobil screen */
+@media screen and (max-width:712px){
+  .nav{
+  height: 10%;
+  background-color: #ff7171;
+  display: flex;
+  justify-content: space-evenly
+}
+  .nav-container{
+  height: 100%;
+  width: auto;
+  display: flex;
+  justify-content:left;
+  align-items: center;
+  margin-left: 10px;
+}
+.container-right{
+  height: 100%;
+  width: 10%;
+}
+.container-right img{
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  padding: 15px 5px;
+
+}
+  .container-left{
+    display:none;
+  }
+ 
+  /* main container */
+.main-content{
+  height:90vh;
+  display: flex;
+  flex-direction:column-reverse ;
+  align-items: center;
+  background: linear-gradient(to right, #ffe6b3, #ffccf9);
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.left-main-container , .right-main-container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  margin-top: 2px;
+  
+}
+.right-main-container img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.food-information-container{
+  height: 80%;
+  width: 80%;
+
+}
+.food-name{
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bolder;
+  font-size: small;
+  letter-spacing: 0.563rem;
+  margin-bottom: 10px;
+}
+
+ .food-discription{
+  height: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: small;
+  line-height: 1.3;
+  text-align: left;
+
+}
+.explore-button{
+  position: relative;
+  top: 5px;
+}
+
+.explore-button button{
+  padding: 10px 70px;
+  background-color: #ff7171;
+  color:white;
+  border: none;
+  font-size: 10px;
+}
+
+/* main container 2 */
+.main-container2{
+ font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+height: 98vh;
+width: 100vw;
+ background: linear-gradient(to right, #ffe6b3, #ffccf9);
+ margin-top: 10px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.image-container{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.data-container{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+}
+.images{
+  height: 80%;
+  width: 80%;
+  display: flex;
+ 
+
+}
+.data-box{
+height: 55%;
+width: 80%;
+padding: 20px;
+background-color: #ff7171;
+}
+
+
+.data-box-container{
+   height: 60%;
+  display: flex;
+ align-items: center;
+ letter-spacing: 4px;
+ font-weight:bolder;
+ font-size:small;
+  
+}
+.data-box-container h1{
+  font-size:large;
+}
+
+.data-box-footer{
+  height: 20%;
+  display: flex;
+  align-items: end;
+  
+}
+.data-box-footer button{
+  height:70%;
+  width: 10%;
+  padding-right: 30px;
+  font-size: small;
+  border: none;
+  background-color:#ff7171;
+}
+.arrow-image{
+  height: 70%;
+  width: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow-image img{
+  height: 100%;
+  width: 100%;
+}
+
+}
+
+@media screen and (min-width:713px)and (max-width :940px){
+  .nav{
+  height: 10%;
+  background-color: #ff7171;
+  display: flex;
+  justify-content: space-evenly
+}
+  .nav-container{
+  height: 100%;
+  width: auto;
+  display: flex;
+  justify-content:left;
+  align-items: center;
+  margin-left: 10px;
+
+}
+.container-right{
+  height: 100%;
+  width: 10%;
+}
+.container-right img{
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  padding: 15px 5px;
+
+ }
+ .container-left a{
+  text-decoration: none;
+  font-size:1.2rem;
+  font-weight: bold;
+  color:black;
+}
+
+ 
+ 
+  .left-main-container , .right-main-container {
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  
+ }
+ .food-information-container{
+  height: 65%;
+  width: 90%;
+}
+.food-name{
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bolder;
+  font-size: small;
+  letter-spacing: 0.563rem;
+
+}
+ .explore-button{
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  position: relative;
+  top: 15px;
+}
+.explore-button button{
+  padding: 10px 70px;
+  background-color: #ff7171;
+  color:white;
+  border: none;
+  font-size: 10px;
+}
+
+.image-container {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 10px;
+
+}
+.data-container{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 10px;
+}
+
+.images{
+  height: 50%;
+  width: 90%;
+  display: flex;
+  position: relative;
+  top: 10px;
+}
+
+.data-box{
+  height: 35%;
+  width: 80%;
+  padding: 20px;
+   background-color: #ff7171;
+}
+
+
+.data-box-container{
+   height: 60%;
+  display: flex;
+ align-items: center;
+ letter-spacing: 4px;
+ font-weight:bolder;
+
+}
+.data-box-container h1{
+  font-size: larger;
+}
+.data-box-footer{
+  height: 20%;
+  display: flex;
+  align-items: end;
+  
+}
+
+
+}
+@media screen and (min-width:744px){
+  .food-information-container{
+  height: 65%;
+  width: 80%;
+
+}
+.food-discription{
+  height: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.data-box{
+  height: 35%;
+  width: 90%;
+  padding: 20px;
+   background-color: #ff7171;
+}
+.data-box-header{
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+.data-box-header p{
+   font-size:0.7rem;
+}
+
+.data-box-container{
+   height: 60%;
+  display: flex;
+ align-items: center;
+ letter-spacing: 4px;
+ font-weight:bolder;
+ font-size:large;
+  
+}
+}
